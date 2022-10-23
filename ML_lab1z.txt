@@ -1,0 +1,13 @@
+import numoy as np
+impor matplot.lib.pyplot as plt 
+features = (np.random.random([30,2])* 20) - 10
+print (features)
+feature1 = (features[:,0])
+feature2 = (features[:,1])
+print(feature1)
+print(feature2)
+label = (feature1+feature2)*2
+print(label)
+plt.scatter(feature1,label)
+plt.scatter(feature2,label)
+plt.show()
